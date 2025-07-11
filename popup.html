@@ -1,0 +1,21 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salad Settings</title>
+  <style>
+    body { width: 300px; padding: 10px; }
+    label { display: block; margin: 5px 0; }
+    .machine { margin-bottom: 10px; }
+    .machine input { margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Electricity Costs</h1>
+  <label>$/kWh: <input id="cost_kwh" type="number" step="0.01"></label>
+  <h2>Machines</h2>
+  <div id="machines"></div>
+  <button id="save">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Salad Net Earnings",
+  "version": "1.0",
+  "description": "Factors in electricity costs for Salad earnings",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://salad.com/earn/summary"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
